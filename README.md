@@ -31,4 +31,10 @@ npm i passport-jwt
 
 npm i @nestjs/axios
 
+npm install pdfkit
 
+npm install --save-dev @types/pdfkit
+
+npm install puppeteer
+
+npm install pdfmake

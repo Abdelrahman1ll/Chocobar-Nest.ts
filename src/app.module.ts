@@ -9,6 +9,7 @@ import { TypeOfChocolateModule } from './type-of-chocolate/type-of-chocolate.mod
 import { AddOnsModule } from './add-ons/add-ons.module';
 import { ProjectsModule } from './projects/projects.module';
 import { OrdersModule } from './orders/orders.module';
+import { PdfModule } from './pdf/pdf.module';
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
@@ -21,6 +22,7 @@ import { OrdersModule } from './orders/orders.module';
     AddOnsModule,
     ProjectsModule,
     OrdersModule,
+    PdfModule,
   ],
   controllers: [],
   providers: [],

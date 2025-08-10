@@ -155,7 +155,9 @@ export class AuthService {
     if (req?.user?.isAdmin === false) {
       throw new UnauthorizedException('You are not allowed on this router.');
     }
-    const users = await this.userModel.find();
+    const users = await this.userModel.find({
+      isAdmin: { $ne: true }, // يستبعد اللي isAdmin بتاعه true
+    });
     return {
       number: users.length,
       success: true,

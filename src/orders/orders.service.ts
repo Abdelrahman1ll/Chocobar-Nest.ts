@@ -22,6 +22,7 @@ export class OrdersService {
     'ZXlKaGJHY2lPaUpJVXpVeE1pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmpiR0Z6Y3lJNklrMWxjbU5vWVc1MElpd2ljSEp2Wm1sc1pWOXdheUk2T0RZeE9ERTFMQ0p1WVcxbElqb2lhVzVwZEdsaGJDSjkuOWZWQkt0ZWh0eE4yYjg4YWNkcFItYk5obmp5Q05uQ1M3VTZ6ZW1YOHNpQkRhTnE3b1pJQS15RmtNT1FfLW1tMEduWXZrQ2FoajAzLUc2YXo0MUlfSnc=';
   private readonly INTEGRATION_ID = 861815; // Card Integration ID من dashboard
   private readonly IFRAME_ID = 875124; // iframe ID من dashboard
+  getOrders: any;
 
   constructor(
     @InjectModel(Order.name)

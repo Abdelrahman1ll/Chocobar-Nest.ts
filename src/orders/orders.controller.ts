@@ -14,7 +14,7 @@ export class OrdersController {
   }
 
   @Post('paymob')
-  // @UseGuards(AuthGuard('jwt'))
+  @UseGuards(AuthGuard('jwt'))
   paymob(@Body() createOrderDto: CreateOrderDto) {
     return this.ordersService.createPaymob(createOrderDto);
   }
